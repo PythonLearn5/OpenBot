@@ -1083,6 +1083,7 @@ const channelSummaries = {
   title: createChannelTitler({
     model: tenantPackage.model.defaultModel,
     resolveApiKey: resolveRuntimeModelApiKey,
+    baseUrl: process.env.OPENAI_BASE_URL?.trim() || undefined,
   }),
   owner: workOwner("summariser"),
 };
