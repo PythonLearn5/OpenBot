@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# s6-overlay config files must use LF line endings — CRLF breaks s6-rc-compile
+docker/s6/** text eol=lf
